@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700|Roboto:300,400,700");
+
+/* Importing component files */
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+
+/* General style rules for fonts and colors */
+body {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+  margin: 0px;
+}
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+
+/* Flexbox Card Styles */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.card {
+  flex-basis: 250px;
+	flex-grow: 1;
+	margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+}
+
+.card img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.card h3 {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
